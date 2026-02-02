@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>PayU Redirect</title>
+</head>
+<body>
+    <h4>Page loading please wait</h4>
+    <!-- Replace the placeholders below server-side before returning this page -->
+    <form id="payuForm" name="payuForm" enctype="application/x-www-form-urlencoded" method="POST" action="https://test.payu.in/_payment" target="_self">
+        <input type="hidden" name="key" value="IMDDxB">
+        <input type="hidden" name="txnid" value="d6fcaa80-f1db-4f57-971b-6e4635b0efa2">
+        <input type="hidden" name="amount" value="49">
+        <input type="hidden" name="firstname" value="Patel Ashish Khodidas">
+        <input type="hidden" name="email" value="spicemoney@gmail.com">
+        <input type="hidden" name="phone" value="7858439425">
+        <input type="hidden" name="productinfo" value="PayU">
+        <input type="hidden" name="surl" value="https://spayuat.spicemoney.com/spayOnboarding/api/payu/success">
+        <input type="hidden" name="furl" value="https://spayuat.spicemoney.com/spayOnboarding/api/payu/failure">
+        <input type="hidden" name="hash" value="259a7db4c4e6e4efbebcb6ba40730f1f25a0c6c5774de1e07401e4880e86694bd98a6914e708e6356b30a53d518cdb83205088b9fd79090f3b9a2610594b6822">
+    </form>
+    <script>
+        // Submit after DOM is ready (safer than immediate inline submit)
+        window.addEventListener('DOMContentLoaded', function () {
+            var f = document.getElementById('payuForm');
+            if (f) f.submit();
+        });
+    </script>
+</body>
+</html>

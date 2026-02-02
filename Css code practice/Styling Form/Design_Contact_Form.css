@@ -1,0 +1,32 @@
+.form-container {
+    background-color: #ff234f;
+    border-radius: 10px;
+    padding: 5px;
+    width: 300px;
+}
+
+label {
+    margin: 20px;
+    color: #d33456;
+}
+
+input {
+    width: 280px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+textarea {
+    width: 280px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+button {
+    background-color: #2ff167;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #2f4234;
+}

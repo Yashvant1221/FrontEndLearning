@@ -1,0 +1,29 @@
+/* NAVBAR */
+#navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 260px;
+    height: 100%;
+    background-color: #f4f4f4;
+    border-right: 2px solid #ccc;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* MAIN CONTENT */
+#main-doc {
+    margin-left: 280px;
+    padding: 20px;
+}
+
+
+/* MEDIA QUERY */
+@media (max-width: 768px) {
+    #navbar {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+
+}

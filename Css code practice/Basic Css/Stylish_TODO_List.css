@@ -1,0 +1,20 @@
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: green;
+}
+
+a:active {
+    color: brown;
+}
+
+a:focus {
+    outline: 2px solid blue;
+    outline-offset: 3px;
+}
+
+a:visited {
+    color: pink;
+}
